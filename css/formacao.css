@@ -1,0 +1,130 @@
+.formacao {
+  background: #141414;
+  color: #ffff;
+}
+
+.formacao-container .subtitulo {
+  color: #000000;
+  font-size: 8.5rem;
+  max-width: 5ch;
+}
+.formacao-texto {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 60px;
+  max-width: 40ch;
+  color: #a3a3a3;
+}
+.formacao-texto strong {
+  color: #ffffff;
+}
+
+.formacao-container {
+  max-width: 1200px;
+  padding: 120px 20px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+.cursos {
+  position: relative;
+}
+.idiomas {
+  position: relative;
+}
+.cursos h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  color: #e0e0e0;
+}
+
+.cursos li {
+  font-family: "Roboto", sans-serif;
+  color: #dfdfdf;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+.cursos h3::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 21px;
+  background: url(/img/formacao.svg) no-repeat center center;
+  position: absolute;
+  left: -32px;
+  top: 8px;
+}
+
+.idiomas h3::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 21px;
+  background: url(/img/translate.svg) no-repeat center center;
+  position: absolute;
+  left: -32px;
+  top: 8px;
+}
+
+.idiomas h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  color: #e0e0e0;
+}
+
+.idiomas li {
+  font-family: "Roboto", sans-serif;
+  color: #dfdfdf;
+  font-size: 1.125rem;
+  line-height: 1.1rem;
+}
+
+.cursos span {
+  order: 2;
+}
+
+.cursos li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .formacao-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 60px 20px;
+  }
+  .formacao-container .subtitulo {
+    color: #ffffff;
+    font-size: 5rem;
+    max-width: initial;
+  }
+  .formacao-texto {
+    max-width: initial;
+  }
+  .cursos h3::before {
+    position: initial;
+    margin-bottom: 10px;
+  }
+  .idiomas h3::before {
+    position: initial;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .formacao-container .subtitulo {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .formacao-container .subtitulo {
+    font-size: 3.5rem;
+  }
+}

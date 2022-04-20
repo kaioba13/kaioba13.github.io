@@ -1,0 +1,81 @@
+.footer {
+  background: #000000;
+  color: #ffffff;
+}
+
+.footer-container {
+  max-width: 1200px;
+  padding: 120px 20px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.footer-texto {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  max-width: initial;
+  color: #a3a3a3;
+}
+
+.contatos {
+  position: relative;
+}
+
+.contatos h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  color: #e0e0e0;
+  margin-bottom: 20px;
+}
+.contatos li,
+a {
+  font-family: "Roboto", sans-serif;
+  color: #dfdfdf;
+  font-size: 1.75rem;
+  line-height: 3rem;
+}
+.contatos a:hover {
+  color: #9400a0;
+
+  transition: 0.2s;
+}
+
+@media (max-width: 800px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-texto {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .contatos h2 {
+    font-size: 2.5rem;
+  }
+  .contatos li,
+  a {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .contatos h2 {
+    font-size: 2rem;
+  }
+  .contatos li,
+  a {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    padding: 20px 0;
+  }
+}
